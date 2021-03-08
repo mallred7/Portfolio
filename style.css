@@ -13,7 +13,10 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
-    #welcome-section {
+    /* #welcome-section {
         height: 75vh;
-    }
+    } */
+    body {
+        background-color: antiquewhite;
+    };
 }
