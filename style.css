@@ -1,3 +1,19 @@
-h1  {
-    color: red;
+/* User Story #9: My portfolio should have at least one media query.
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+User Story #11: The navbar should always be at the top of the viewport. */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+    #welcome-section {
+        height: 75vh;
+    }
 }
