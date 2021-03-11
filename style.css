@@ -21,16 +21,19 @@ nav a {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: #73000a;
-    transition: background linear 2s;
+    animation: intro 4s ease-out 0s 1 normal forwards;
+    /* background: #73000a; */
     justify-content: center;
     align-items: center;
 }
 
-#welcome-section:hover {
-    background: #fff;
-    transition-duration: 1s;
-    transition-delay: 1s;
+@keyframes intro {
+    from {
+        background: #73000a;
+    }
+    to {
+        background: #fff;
+    }
 }
 
 #welcome-section h1, h3 {
