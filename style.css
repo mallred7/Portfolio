@@ -1,10 +1,11 @@
-/* User Story #9: My portfolio should have at least one media query.
-User Story #10: The height of the welcome section should be equal to the height of the viewport.
-User Story #11: The navbar should always be at the top of the viewport. */
+/* General Styles */
+
 body {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif
 }
+
+/* Navbar */
 
 nav {
     position: fixed;
@@ -17,17 +18,54 @@ nav a {
     color: white;
 }
 
+/* Welcome Section  */
+
 #welcome-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    justify-items: end;
+    align-content: center;
     height: 100vh;
-    animation: intro 4s ease-out 0s 1 normal forwards;
-    /* background: #73000a; */
-    justify-content: center;
-    align-items: center;
+    animation: intro-back 2s ease-out 1s 1 normal forwards;
+    background: #73000a;
 }
 
-@keyframes intro {
+#hello-world {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 9vw;
+}
+
+h2 {
+    font-size: 7vw;
+}
+
+h3 {
+    font-size: 5vw;
+}
+
+#all {
+    color: #73000a;
+}
+
+.red {
+    color: #73000a;
+}
+
+#green {
+    color: #65780B;
+}
+
+h1, h2, h3 {
+    color: #000;
+    margin: 0 20px;
+    text-align: end;
+}
+
+@keyframes intro-back {
     from {
         background: #73000a;
     }
@@ -36,9 +74,7 @@ nav a {
     }
 }
 
-#welcome-section h1, h3 {
-    color: #73000a
-}
+/* Projects Grid */
 
 #projects {
     background: wheat;
@@ -48,6 +84,9 @@ nav a {
 
 .card {
     background: #1F414D;
+    padding: 130px;
+    margin: 20px;
+    height: 25vh;
 }
 
 #about {
