@@ -2,15 +2,15 @@
 User Story #10: The height of the welcome section should be equal to the height of the viewport.
 User Story #11: The navbar should always be at the top of the viewport. */
 body {
-    margin-left: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #73000a;
+    background: #73000a;
 }
 
 nav a {
@@ -18,8 +18,19 @@ nav a {
 }
 
 #welcome-section {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    background-color: white;
+    background: #73000a;
+    transition: background linear 2s;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section:hover {
+    background: #fff;
+    transition-duration: 1s;
+    transition-delay: 1s;
 }
 
 #welcome-section h1, h3 {
@@ -27,20 +38,16 @@ nav a {
 }
 
 #projects {
-    background-color: wheat;
+    background: wheat;
     display: flex;
     justify-content: space-evenly;
 }
 
-#links {
-    background-color: khaki;
+.card {
+    background: #1F414D;
 }
 
-@media screen and (min-width: 800px) {
-    /* #welcome-section {
-        height: 75vh;
-    } */
-    body {
-        background-color: antiquewhite;
-    };
+#about {
+    background: khaki;
+    height: 25vh;
 }
