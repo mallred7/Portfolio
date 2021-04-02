@@ -2,20 +2,31 @@
 
 body {
     margin: 0 auto;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif
 }
 
 /* Navbar */
 
-nav {
+nav {    
+    text-align: center;
     position: fixed;
-    top: 0;
+    margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     background: #73000a;
 }
 
 nav a {
     color: white;
+    margin: 5px 20px;    
 }
 
 /* Welcome Section  */
@@ -35,15 +46,15 @@ nav a {
     flex-direction: column;
 }
 
-h1 {
+#hello-world h1 {
     font-size: 9vw;
 }
 
-h2 {
+#hello-world h2 {
     font-size: 7vw;
 }
 
-h3 {
+#hello-world h3 {
     font-size: 5vw;
 }
 
@@ -59,7 +70,7 @@ h3 {
     color: #65780B;
 }
 
-h1, h2, h3 {
+#hello-world h1, h2, h3 {
     color: #000;
     margin: 0 20px;
     text-align: end;
@@ -77,19 +88,46 @@ h1, h2, h3 {
 /* Projects Grid */
 
 #projects {
-    background: wheat;
+    background: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 85%;
 }
 
 .card {
-    background: #1F414D;
+    /* display: flex; */
+    background: white;
+    border: 1px solid #1F414D;
     padding: 130px;
-    margin: 20px;
-    height: 25vh;
+    margin: 10px;
+    height: 100px;
+    width: 25vw;
+    box-shadow: 0px 5px 5px #C7C7C7;
 }
 
-#about {
+/* Contact Section */
+
+#contact {
     background: khaki;
     height: 25vh;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    text-align: center;
+    margin: 3em 3em;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.fab {
+    color: black;
+    ;
 }
