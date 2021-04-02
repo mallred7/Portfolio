@@ -15,6 +15,13 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        bottom: 0;
+    }
 }
 
 nav div {
@@ -22,6 +29,7 @@ nav div {
     justify-content: center;
     list-style-type: none;
     background: #73000a;
+    position: relative;
 }
 
 nav a {
@@ -88,35 +96,106 @@ nav a {
 /* Projects Grid */
 
 #projects {
-    background: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(199,199,199,1) 90%, rgba(255,255,255,1) 100%); 
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 85%;
+    width: 85%;
+    margin: 25vh auto;
+    z-index: 1;
 }
 
 .card {
     /* display: flex; */
-    background: white;
-    border: 1px solid #1F414D;
-    padding: 130px;
+    background: #466A9F;    
     margin: 10px;
-    height: 100px;
-    width: 25vw;
-    box-shadow: 0px 5px 5px #C7C7C7;
+    height: 400px;
+    max-width: 400px;
+    box-shadow: 0px 5px 5px #000;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.preview {
+    position: relative;
+}
+
+.context {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    opacity: 1;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+}
+
+.context {
+    background-color: greenyellow;
+    padding: 5%;
+    width: 150px;  
+    opacity: 0;
+    transition: .5s ease;  
+}
+
+.preview:hover .image, .preview:active .image {
+    opacity: 0.3;
+}
+
+.preview:hover .context, .preview:active .context {
+    opacity: 1;
+}
+
+.source {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card p {
+    padding: ;
 }
 
 /* Contact Section */
 
 #contact {
-    background: khaki;
+    background: black;
     height: 25vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact h1 {
     text-align: center;
-    margin: 3em 3em;
+    margin: 5vh 5vw;
+    color: white;
 }
 
 #contacts {
@@ -127,7 +206,7 @@ nav a {
     justify-content: space-evenly;
 }
 
-.fab {
-    color: black;
+#contact i {
+    color: white;
     ;
 }
