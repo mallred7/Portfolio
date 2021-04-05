@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 2;
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -30,6 +31,7 @@ nav div {
     list-style-type: none;
     background: #73000a;
     position: relative;
+    border-radius: 25px;
 }
 
 nav a {
@@ -116,12 +118,14 @@ nav a {
 .card {
     /* display: flex; */
     background: #466A9F;    
-    margin: 10px;
+    margin: 20px;
     height: 400px;
     max-width: 400px;
     box-shadow: 0px 5px 5px #000;
     text-align: center;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card img {
@@ -137,22 +141,23 @@ nav a {
 }
 
 .context {
+    background-color: #1F414D;
     position: absolute;
+    width: 150px; 
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    opacity: 1;
+    padding: 5%;
+    border-radius: 55px;
+    opacity: 0;
     transition: .5s ease;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); 
 }
 
-.context {
-    background-color: greenyellow;
-    padding: 5%;
-    width: 150px;  
-    opacity: 0;
-    transition: .5s ease;  
+.text {
+    color: white;
+    padding: 10px;
 }
 
 .preview:hover .image, .preview:active .image {
@@ -179,7 +184,7 @@ nav a {
 }
 
 .card p {
-    padding: ;
+    padding: 7px;
 }
 
 /* Contact Section */
