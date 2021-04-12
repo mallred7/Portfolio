@@ -13,6 +13,7 @@ nav {
     position: fixed;
     margin: 0 auto;
     width: 100%;
+    height: 7%;
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -22,16 +23,18 @@ nav {
 @media screen and (max-width: 600px) {
     nav {
         bottom: 0;
+        height: 10%
     }
 }
 
 nav div {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     list-style-type: none;
     background: #73000a;
     position: relative;
-    border-radius: 25px;
 }
 
 nav a {
@@ -42,22 +45,21 @@ nav a {
 /* Welcome Section  */
 
 #welcome-section {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    justify-items: end;
-    align-content: center;
     height: 100vh;
-    animation: intro-back 2s ease-out 1s 1 normal forwards;
-    background: #73000a;
 }
 
 #hello-world {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5vw;
+    height: 90%;
+    justify-content: center;
 }
 
 #hello-world h1 {
     font-size: 9vw;
+    color: #73000a;
 }
 
 #hello-world h2 {
@@ -68,38 +70,76 @@ nav a {
     font-size: 5vw;
 }
 
-#all {
-    color: #73000a;
+#name {
+    margin: 7vh 0 7vh 0;
+    white-space: nowrap;
 }
 
-.red {
-    color: #73000a;
+#matt {
+    background-color: #73000a;
+    padding: 2rem .5rem;
+    /* border-radius: 3%; */
+    animation: intro-matt .1s linear 3.5s normal forwards;
+}
+
+
+#all {margin-left: -2vw;}
+
+#red {
+    margin-left: 3vw;
+    overflow: visible;
+    animation: intro-allred 2s ease 1.5s 1 normal forwards;
+}
+
+.hello-filler {
+    animation: intro-filler .5s linear 4s normal forwards;
+    color: white;
+    padding-left: 2vw;
 }
 
 #green {
-    color: #65780B;
+        animation: intro-green 4s linear 4s normal forwards;
+    color: white;
 }
 
 #hello-world h1, h2, h3 {
-    color: #000;
-    margin: 0 20px;
-    text-align: end;
+    margin: 0 10vw;
+    text-align: left;
 }
 
-@keyframes intro-back {
-    from {
-        background: #73000a;
-    }
-    to {
-        background: #fff;
-    }
+@keyframes intro-allred {
+    from {margin-left: 3vw;}
+    to {margin-left: -2.5vw;}
 }
+
+@keyframes intro-matt {
+    from {color: #73000a;}
+    to {color: white;}
+}
+
+@keyframes intro-filler {
+    from {
+        color: white;
+        padding-left: 2vw;
+        }
+    to {
+        color: black;
+        padding-left: 0;}
+}
+
+@keyframes intro-green {
+    0% {color: white;}
+    12.5% {color: black;}
+    75% {color: black;}
+    100% {color: #65780B;}
+}
+
 
 /* Projects Grid */
 
 #projects {
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(199,199,199,1) 90%, rgba(255,255,255,1) 100%); 
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(162,162,162,1) 90%, rgba(255,255,255,1) 100%); 
     display: flex;
     justify-content: center;
     width: 100%;
