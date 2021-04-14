@@ -17,6 +17,8 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 2;
+    opacity: 0;
+    animation: nav .5s linear 4s normal forwards;;
     
 }
 
@@ -45,7 +47,7 @@ nav a {
 /* Welcome Section  */
 
 #welcome-section {
-    height: 100vh;
+    height: 110vh;
 }
 
 #hello-world {
@@ -79,16 +81,16 @@ nav a {
     background-color: #73000a;
     padding: 2rem .5rem;
     /* border-radius: 3%; */
-    animation: intro-matt .1s linear 3.5s normal forwards;
+    animation: intro-matt .1s linear 3s normal forwards;
 }
 
 
 #all {margin-left: -2vw;}
 
 #red {
-    margin-left: 3vw;
+    margin-left: 2.5vw;
     overflow: visible;
-    animation: intro-allred 2s ease 1.5s 1 normal forwards;
+    animation: intro-allred 2s ease 1s 1 normal forwards;
 }
 
 .hello-filler {
@@ -98,7 +100,7 @@ nav a {
 }
 
 #green {
-        animation: intro-green 4s linear 4s normal forwards;
+        animation: intro-green 2s linear 4s normal forwards;
     color: white;
 }
 
@@ -108,7 +110,7 @@ nav a {
 }
 
 @keyframes intro-allred {
-    from {margin-left: 3vw;}
+    from {margin-left: 2.5vw;}
     to {margin-left: -2.5vw;}
 }
 
@@ -129,11 +131,36 @@ nav a {
 
 @keyframes intro-green {
     0% {color: white;}
-    12.5% {color: black;}
+    25% {color: black;}
     75% {color: black;}
     100% {color: #65780B;}
 }
 
+@keyframes nav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+/* About Me */
+
+#about {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+#pablum {
+    margin: 0 10vw 0 10vw;
+}
+
+#skills {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Projects Grid */
 
