@@ -68,6 +68,9 @@ nav a {
 }
 
 #hello-world {
+/* Position */
+/* Display & Box Model */
+/* Other */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -97,7 +100,6 @@ nav a {
 #matt {
     background-color: #73000a;
     padding: 2rem .5rem;
-    /* border-radius: 3%; */
     animation: intro-matt .1s linear 3s normal forwards;
 }
 
@@ -161,7 +163,9 @@ nav a {
 /* About Me */
 
 #about {
-    /* height: 100vh; */
+/* Position */
+/* Display & Box Model */
+/* Other */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -172,6 +176,9 @@ nav a {
 }
 
 #pablum {
+/* Position */
+/* Display & Box Model */
+/* Other */
     margin: 0 10vw 0 10vw;
     max-width: 500px;
     align-items: center;
@@ -187,6 +194,9 @@ nav a {
 /* Projects Grid */
 
 #projects {
+/* Position */
+/* Display & Box Model */
+/* Other */
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(162,162,162,1) 90%, rgba(255,255,255,1) 100%); 
     display: flex;
@@ -195,6 +205,9 @@ nav a {
 }
 
 #portfolio {
+/* Position */
+/* Display & Box Model */
+/* Other */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -205,7 +218,9 @@ nav a {
 }
 
 .card {
-    /* display: flex; */
+/* Position */
+/* Display & Box Model */
+/* Other */
     background: #73000a;    
     margin: 20px;
     height: 400px;
@@ -219,6 +234,9 @@ nav a {
 }
 
 .card img {
+/* Position */
+/* Display & Box Model */
+/* Other */
     display: block;
     width: 100%;
     height: 100%;
@@ -231,6 +249,9 @@ nav a {
 }
 
 .context {
+/* Position */
+/* Display & Box Model */
+/* Other */
     background-color: #1F414D;
     position: absolute;
     width: 150px; 
@@ -280,6 +301,9 @@ nav a {
 /* Contact Section */
 
 #contact {
+/* Position */
+/* Display & Box Model */
+/* Other */
     background: black;
     height: 25vh;
     margin: 0 auto;
@@ -294,6 +318,9 @@ nav a {
 }
 
 #contacts {
+/* Position */
+/* Display & Box Model */
+/* Other */
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -303,5 +330,4 @@ nav a {
 
 #contact i {
     color: white;
-    ;
 }
