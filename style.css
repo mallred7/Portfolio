@@ -69,14 +69,15 @@ nav a {
 
 #hello-world {
 /* Position */
+    height: 90%;
 /* Display & Box Model */
-/* Other */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 5vw;
-    height: 90%;
     justify-content: center;
+/* Other */
+   
 }
 
 #hello-world h1 {
@@ -195,41 +196,42 @@ nav a {
 
 #projects {
 /* Position */
+    width: 100%;
 /* Display & Box Model */
-/* Other */
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(162,162,162,1) 90%, rgba(255,255,255,1) 100%); 
     display: flex;
     justify-content: center;
-    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(162,162,162,1) 90%, rgba(255,255,255,1) 100%); 
+/* Other */
+
 }
 
 #portfolio {
 /* Position */
+    width: 85%;
+    z-index: 1;
 /* Display & Box Model */
-/* Other */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 85%;
     margin: 25vh auto;
-    z-index: 1;
+/* Other */
+
 }
 
 .card {
 /* Position */
-/* Display & Box Model */
-/* Other */
-    background: #73000a;    
-    margin: 20px;
+    position: relative;
     height: 400px;
     max-width: 400px;
     min-width: 300px;
+/* Display & Box Model */
+    margin: 20px;
+    border-radius: 10px;
+/* Other */
+    background: #73000a;    
     box-shadow: 0px 5px 5px #000;
     text-align: center;
-    position: relative;
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -250,16 +252,16 @@ nav a {
 
 .context {
 /* Position */
-/* Display & Box Model */
-/* Other */
-    background-color: #1F414D;
     position: absolute;
     width: 150px; 
     top: 50%;
     left: 50%;
+/* Display & Box Model */
     margin: 0 auto;
     padding: 5%;
     border-radius: 55px;
+/* Other */
+    background-color: #1F414D;    
     opacity: 0;
     transition: .5s ease;
     transform: translate(-50%, -50%);
@@ -302,13 +304,14 @@ nav a {
 
 #contact {
 /* Position */
-/* Display & Box Model */
-/* Other */
-    background: black;
     height: 25vh;
+/* Display & Box Model */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background: black;
+/* Other */        
+
 }
 
 #contact h1 {
@@ -319,13 +322,13 @@ nav a {
 
 #contacts {
 /* Position */
+    width: 50%;
 /* Display & Box Model */
-/* Other */
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    width: 50%;
     justify-content: space-evenly;
+    margin: 0 auto;
+/* Other */
 }
 
 #contact i {
