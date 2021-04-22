@@ -229,25 +229,27 @@ nav a {
     margin: 20px;
     border-radius: 10px;
 /* Other */
-    background: #73000a;    
-    box-shadow: 0px 5px 5px #000;
+    background: white;    
+    box-shadow: 0px 10px 25px 2px #000;
+    border: .25rem solid #73000a;
     text-align: center;
     overflow: hidden;
 }
 
 .card img {
 /* Position */
-/* Display & Box Model */
-/* Other */
-    display: block;
     width: 100%;
     height: 100%;
+/* Display & Box Model */
+    display: block;
+/* Other */ 
     opacity: 1;
     transition: .5s ease;
 }
 
 .preview {
     position: relative;
+    border: 1px solid #73000a;
 }
 
 .context {
