@@ -199,8 +199,7 @@ nav a {
     width: 100%;
 /* Display & Box Model */
     display: flex;
-    justify-content: center;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(199,199,199,1) 10%, rgba(162,162,162,1) 90%, rgba(255,255,255,1) 100%); 
+    justify-content: center; 
 /* Other */
 
 }
@@ -311,7 +310,6 @@ nav a {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background: black;
 /* Other */        
 
 }
@@ -319,7 +317,6 @@ nav a {
 #contact h1 {
     text-align: center;
     margin: 5vh 5vw;
-    color: white;
 }
 
 #contacts {
@@ -334,5 +331,5 @@ nav a {
 }
 
 #contact i {
-    color: white;
+    color: black;
 }
