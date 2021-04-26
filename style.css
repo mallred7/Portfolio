@@ -32,7 +32,7 @@ nav {
     opacity: 0;
 /* Other */
     text-align: center;    
-    animation: nav .5s linear 4s normal forwards;;
+    animation: nav .5s linear 5s normal forwards;;
     
 }
 
@@ -60,6 +60,12 @@ nav a {
     margin: 5px 20px; 
     color: white; 
 }
+
+@keyframes nav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
 
 /* Welcome Section  */
 
@@ -101,7 +107,7 @@ nav a {
 #matt {
     background-color: #73000a;
     padding: 2rem .5rem;
-    animation: intro-matt .1s linear 3s normal forwards;
+    animation: intro-matt .1s linear 2s normal forwards;
 }
 
 
@@ -110,17 +116,23 @@ nav a {
 #red {
     margin-left: 2.5vw;
     overflow: visible;
-    animation: intro-allred 2s ease 1s 1 normal forwards;
+    animation: intro-allred 1s ease 1s 1 normal forwards;
+}
+
+#hi {
+    animation: hi .5s linear 2.5s normal forwards;
+    color: white;
+    padding-left: 2vw;
 }
 
 .hello-filler {
-    animation: intro-filler .5s linear 4s normal forwards;
+    animation: intro-filler .5s linear 3.5s normal forwards;
     color: white;
     padding-left: 2vw;
 }
 
 #green {
-        animation: intro-green 2s linear 4s normal forwards;
+    animation: intro-green 2s linear 3.5s normal forwards;
     color: white;
 }
 
@@ -139,6 +151,16 @@ nav a {
     to {color: white;}
 }
 
+@keyframes hi {
+    from {
+        color: white;
+        padding-left: 2vw;
+        }
+    to {
+        color: black;
+        padding-left: 0;}
+}
+
 @keyframes intro-filler {
     from {
         color: white;
@@ -155,11 +177,6 @@ nav a {
     75% {color: black;}
     100% {color: #65780B;}
 }
-
-@keyframes nav {
-    from {opacity: 0;}
-    to {opacity: 1;}
-} 
 
 /* About Me */
 
