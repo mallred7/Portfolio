@@ -70,7 +70,8 @@ nav a {
 /* Welcome Section  */
 
 #welcome-section {
-    height: 110vh;
+    height: 90vh;
+    padding-top: 5vh;
 }
 
 #hello-world {
@@ -80,7 +81,7 @@ nav a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 5vw;
+    padding: 4vw;
     justify-content: center;
 /* Other */
    
@@ -230,7 +231,7 @@ nav a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 25vh auto;
+    margin: 25vh auto 10vh;
 /* Other */
 
 }
@@ -324,9 +325,9 @@ nav a {
 /* Position */
     height: 25vh;
 /* Display & Box Model */
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin: 0 auto 10vh;
 /* Other */        
 
 }
@@ -349,4 +350,10 @@ nav a {
 
 #contact i {
     color: black;
+}
+
+@media screen and (min-width: 600px) {
+    #contact {
+        margin: 0 auto;
+    }
 }
