@@ -147,7 +147,6 @@ nav a {
     animation: intro-projects .5s linear 3.5s normal forwards;
     color: white;
     margin: 0 auto;
-    bottom: 0;
 }
 
 @keyframes intro-allred {
