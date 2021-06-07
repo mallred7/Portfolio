@@ -142,6 +142,14 @@ nav a {
     text-align: left;
 }
 
+.hello-projects {
+    text-decoration: none;
+    animation: intro-projects .5s linear 3.5s normal forwards;
+    color: white;
+    margin: 0 auto;
+    bottom: 0;
+}
+
 @keyframes intro-allred {
     from {margin-left: 2.5vw;}
     to {margin-left: -2.5vw;}
@@ -170,6 +178,15 @@ nav a {
     to {
         color: black;
         padding-left: 0;}
+}
+
+@keyframes intro-projects {
+    from {
+        color: white;
+        }
+    to {
+        color: black;
+        }
 }
 
 @keyframes intro-green {
@@ -265,45 +282,12 @@ nav a {
 }
 
 .preview {
+    height: 50%;
     position: relative;
     border: 1px solid #73000a;
 }
 
-.context {
-/* Position */
-    position: absolute;
-    width: 150px; 
-    top: 50%;
-    left: 50%;
-/* Display & Box Model */
-    margin: 0 auto;
-    padding: 5%;
-    border-radius: 55px;
-/* Other */
-    background-color: #1F414D;    
-    opacity: 0;
-    transition: .5s ease;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); 
-}
 
-.text {
-    color: white;
-    padding: 10px;
-}
-
-.preview:hover .image, .preview:active .image {
-    opacity: 0.3;
-}
-
-.preview:hover .context, .preview:active .context {
-    opacity: 1;
-}
-
-.source {
-    display: flex;
-    justify-content: space-around;
-}
 
 .project-about {
     display: flex;
@@ -311,12 +295,12 @@ nav a {
 }
 
 .card a {
-    color: white;
+    color: #73000a;
     text-decoration: none;
 }
 
 .card p {
-    padding: 7px;
+
 }
 
 /* Contact Section */
