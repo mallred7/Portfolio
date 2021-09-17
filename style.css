@@ -257,7 +257,7 @@ img {
 
 #portfolio {
 /* Position */
-    width: 85%;
+    width: 80%;
     z-index: 1;
 /* Display & Box Model */
     display: flex;
@@ -273,8 +273,7 @@ img {
 /* Position */
     position: relative;
     height: 400px;
-    max-width: 400px;
-    min-width: 300px;
+    width: 350px;
 /* Display & Box Model */
     margin: 20px;
     border-radius: 10px;
